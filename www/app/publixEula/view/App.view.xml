@@ -1,0 +1,10 @@
+<mvc:View controllerName="com.publix.eula.controller.App"
+		xmlns:mvc="sap.ui.core.mvc"
+        xmlns="sap.m" 
+		displayBlock="true" >
+	<App id="idApp"
+		busy="{appView>/busy}"
+		busyIndicatorDelay="{appView>/delay}" >
+        <pages />
+    </App>
+</mvc:View>

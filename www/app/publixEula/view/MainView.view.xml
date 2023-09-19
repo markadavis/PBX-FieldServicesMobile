@@ -1,0 +1,70 @@
+<mvc:View controllerName="com.publix.eula.controller.MainView"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m" >
+	<App>
+		<pages>
+			<Page id="mainPage"
+				busy="true"
+				busyIndicatorDelay="0"
+				title="{i18n>title}">
+				<content>
+					<l:VerticalLayout
+						width="100%" >
+						<l:content>
+							<FlexBox
+								width="100%"
+								height="2rem"
+								alignItems="Center"
+								justifyContent="Center">
+								<items>
+									<Label id="eulaTitle"
+										class="sapUiLargeMarginTop"
+										design="Bold"
+										text="{eula>/EulaDocument/Title}" />
+								</items>
+							</FlexBox>
+							<FlexBox
+								width="100%"
+								height="auto"
+								alignItems="Center"
+								justifyContent="Center">
+								<items>
+									<Text id="eulaBody"
+										class="sapUiLargeMarginTop sapUiMediumMarginBegin sapUiMediumMarginEnd"
+
+										text="{eula>/EulaDocument/Text}" />
+								</items>
+							</FlexBox>
+							<FlexBox
+								width="100%"
+								height="auto"
+								alignItems="Center"
+								justifyContent="Center">
+								<items>
+									<HBox
+										class = "sapUiLargeMarginTop">
+										<items>
+											<Button id="BtnAccept"
+												type="Accept"
+												visible="false"
+												text="{i18n>BtnAccept}"
+												press="onAcceptPress" />
+											<Text class="sapUiMediumMarginBeginEnd" />
+											<Button id="BtnReject"
+												type="Reject"
+												visible="false"
+												text="{i18n>BtnReject}"
+												press="onRejectPress" />
+										</items>
+									</HBox>
+								</items>
+							</FlexBox>
+						</l:content>
+					</l:VerticalLayout>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

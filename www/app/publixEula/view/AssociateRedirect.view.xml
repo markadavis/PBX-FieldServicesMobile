@@ -1,0 +1,72 @@
+<mvc:View controllerName="com.publix.eula.controller.AssociateLogon"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:layout="sap.ui.layout"
+    xmlns:form="sap.ui.layout.form"
+	xmlns="sap.m" >
+
+    <Page id="idAssociateRedirectPage"
+        busy="{busy}"
+        busyIndicatorDelay="{busyIndicatorDelay}"
+        showHeader="true"
+        titleAlignment="Center"
+        title="{i18n>title}" >
+        <content>
+            <layout:VerticalLayout
+                width="100%">
+                <layout:content>
+                    <!-- Publix Associate Logo -->
+                    <VBox class="sapUiSmallMarginTop"
+                        width="100%"
+                        height="auto"
+                        alignItems="Center"
+                        justifyContent="Center" >
+                        <items>
+                            <Image src="/app/publixEula/img/PublixAssociate.png"
+                                width="10rem"
+                                height="auto" />
+                        </items>
+                    </VBox>
+                    <!-- Logon Instruction -->
+                    <VBox class="sapUiSmallMarginTop"
+                        alignItems="Center"
+                        justifyContent="Center" >
+                        <items>
+                            <Title class="sapUiMediumMarginBeginEnd"
+                                level="H2"
+                                text="{i18n>AssociateRedirectTitle}" />
+                            <MessageStrip
+                                class="sapUiSmallMarginTop sapUiMediumMarginBeginEnd"
+                                enableFormattedText="true"
+                                type="Information"
+                                showIcon="true"
+                				text="{i18n>AssociateLogonInstruction}" />
+                        </items>
+                    </VBox>
+                    <!-- Cancel & Logon buttons -->
+                    <FlexBox
+                        width="100%"
+                        height="100%"
+                        alignItems="Center"
+                        justifyContent="Center">
+                        <items>
+                            <HBox class="sapUiSmallMarginTop" >
+                                <items>
+                                    <Button
+                                        type="Ghost"
+                                        text="{i18n>BtnCancel}"
+                                        press=".onCancelPress" />
+                                    <ToolbarSeparator class="sapUiSmallMarginBeginEnd"/>
+                                    <Button
+                                        type="Ghost"
+                                        text="{i18n>BtnLogon}"
+                                        press=".onLogonPress" />
+                                </items>
+                            </HBox>
+                        </items>
+                    </FlexBox>
+                </layout:content>
+            </layout:VerticalLayout>
+        </content>
+    </Page>
+</mvc:View>

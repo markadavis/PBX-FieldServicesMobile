@@ -1,0 +1,90 @@
+<mvc:View controllerName="com.publix.eula.controller.VendorLogon"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:layout="sap.ui.layout"
+    xmlns:form="sap.ui.layout.form"
+	xmlns="sap.m" >
+
+    <Page id="idVendorLogonPage"
+        busy="{busy}"
+        busyIndicatorDelay="{busyIndicatorDelay}"
+        showHeader="true"
+        titleAlignment="Center"
+        title="{i18n>title}" >
+        <content>
+            <layout:VerticalLayout
+                width="100%" >
+                <layout:content>
+                    <!-- Publix Vendor Logo -->
+                    <VBox class="sapUiSmallMarginTop"
+                        width="100%"
+                        height="auto"
+                        alignItems="Center"
+                        justifyContent="Center" >
+                        <items>
+                            <Image src="/app/publixEula/img/PublixVendor.png"
+                                width="10rem"
+                                height="auto" />
+                        </items>
+                    </VBox>
+                    <!-- Vendor Logon Form -->
+                    <VBox class="sapUiLargeMarginTop sapUiSmallMarginBottom"
+                        width="100%"
+                        height="auto"
+                        alignItems="Center"
+                        justifyContent="Center">
+                        <items>
+                            <form:SimpleForm 
+                                title="{i18n>VendorLogonTitle}" >
+                                <form:content>
+                                    <Label labelFor="vendorId"
+                                        text="{i18n>appUserId}" />
+                                    <Input id="vendorId"
+                                        value="{/userId}" />
+                                    <Label labelFor="vendorPassword"
+                                        text="{i18n>appPassword}" />
+                                    <Input id="vendorPassword"
+                                        type="Password"
+                                        value="{/passwd}" />
+                                </form:content>
+                            </form:SimpleForm>
+                        </items>
+                    </VBox>
+                    <!-- Cancel & Logon buttons -->
+                    <FlexBox
+                        width="100%"
+                        height="100%"
+                        alignItems="Center"
+                        justifyContent="Center">
+                        <items>
+                            <HBox class="sapUiSmallMarginTop" >
+                                <items>
+                                    <Button
+                                        type="Ghost"
+                                        text="{i18n>BtnCancel}"
+                                        press=".onCancelPress" />
+                                    <ToolbarSeparator class="sapUiSmallMarginBeginEnd"/>
+                                    <Button
+                                        type="Ghost"
+                                        text="{i18n>BtnLogon}"
+                                        press=".onLogonPress" />
+                                </items>
+                            </HBox>
+                        </items>
+                    </FlexBox>
+                    <!-- Logon Instruction -->
+                    <VBox class="sapUiSmallMarginTop" >
+                        <items>
+                            <MessageStrip
+                                class="sapUiMediumMarginBeginEnd publixTextSmallFont"
+                                enableFormattedText="true"
+                                type="Information"
+                                showIcon="true"
+                				text="{i18n>VendorLogonInstruction}" />
+                        </items>
+                    </VBox>
+                </layout:content>
+            </layout:VerticalLayout>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,30 @@
+/* Enter your custom styles here */
+
+.publixTextSmallFont .sapMMsgStripMessage .sapMFT {
+    font-size: smaller;
+}
+
+.center {
+    text-align: center;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #efeff4;
+    font-weight: 400;
+    color: rgb(31, 31, 33);
+}
+
+* {
+    font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+
+* {
+    -moz-user-select: none;
+    -moz-box-sizing: border-box;
+}

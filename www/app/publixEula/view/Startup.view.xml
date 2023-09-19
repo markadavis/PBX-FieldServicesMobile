@@ -1,0 +1,12 @@
+<mvc:View controllerName="com.publix.eula.controller.Startup"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" >
+
+	<MessagePage id="idStartupPage"
+		visible="false"
+		showHeader="false"
+		icon="sap-icon://lateness"
+		description="{i18n>title}"
+		text="{i18n>appContactingServices}" />
+
+</mvc:View>
