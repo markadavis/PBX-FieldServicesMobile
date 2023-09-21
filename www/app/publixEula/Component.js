@@ -62,6 +62,15 @@ sap.ui.define([
 		},
 
 		/**
+		 * Return the configuration setting for using the local logon page (or the redirect).
+		 * @returns {Boolean} True if the local logon page is to be used.
+		 * @public
+		 */
+		getUseLocalLogon: function() {
+			return this.config.LOCAL_LOGON;
+		},
+
+		/**
 		 * Return the URI for Publix Associate interactions.
 		 * @returns {String} the URI for Publix Associate Logons.
 		 * @public

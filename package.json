@@ -1,16 +1,19 @@
 {
-  "name": "io.cordova.hellocordova",
+  "name": "com.publix.erpmobile",
   "displayName": "Publix ERP Mobile",
   "version": "1.0.0",
-  "description": "Publix ERP Mobile App",
+  "description": "Publix ERP Mobile App (Based on SAPU5 v1.84.37)",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cordova platform add browser && cordova platform add ios && cordova platform add android",
+    "start": "cordova run browser",
+    "download-ui5": "curl -o ./www/js/sapui5-rt-1.84.37.zip http://tools.hana.ondemand.com/additional/sapui5-rt-1.84.37.zip",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "Apache Cordova Team",
+  "author": "Pubilx Technology ERP Team",
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-android": "^12.0.1",

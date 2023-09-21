@@ -27,4 +27,4 @@ node_modules/
 /platforms/
 
 # SAPUI5 Libraryies ( https://tools.hana.ondemand.com/#sapui5 )
-/www/js/resources/
+/www/app/resources/

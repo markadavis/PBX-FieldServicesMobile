@@ -33,13 +33,19 @@ sap.ui.define([
 		/* ================================================== */
 
 		onVendorPress: function(oEvent) {
-			// this._oRouter.navTo("vendorLogon");
-			this._oRouter.navTo("vendorRedirect");
+			if (this._oComponent.getUseLocalLogon()) {
+				this._oRouter.navTo("vendorLogon");
+			} else {
+				this._oRouter.navTo("vendorRedirect");
+			}
 		},
 
 		onAssociatePress: function(oEvent) {
-			// this._oRouter.navTo("associateLogon");
-			this._oRouter.navTo("associateRedirect");
+			if (this._oComponent.getUseLocalLogon()) {
+				this._oRouter.navTo("associateLogon");
+			} else {
+				this._oRouter.navTo("associateRedirect");
+			}
 		},
 
 		onChangeSystem: function(oEvent) {
