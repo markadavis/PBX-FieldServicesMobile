@@ -9,6 +9,7 @@
     <author email="publix-technology-erpmobile@publix.com" href="https://publix.com">
         Publix Technology ERP Team
     </author>
+		<access origin="*" />
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
