@@ -11,6 +11,13 @@ This Guide is for building Apple App Store (iOS) applications.  Specifically, th
     - `> npm install @capacitor/ios`
     - `> npx cap add ios`
 
+- Build the app using the build script (it will build all platforms):
+    - `> npx vite build`
+
+- Install the CocoaPods dependency management tool (https://cocoapods.org/):
+    - `> sudo gem install cocoapods`
+
+
 - To run the app on a device or simulator, run:
     - `> npx cap run ios`
 

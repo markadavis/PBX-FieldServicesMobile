@@ -20,7 +20,9 @@ The SAPUI5 libraries used by the deployed application are not stored in this rep
         - `> npx cap add ios`
         - `> npm install @capacitor/android`
         - `> npx cap add android`
-    - Run the npm script to install the develelopment dependencies: `> npm install`
+    - Run the npm script to install the develelopment dependencies & build the app artifacts (for all platforms):
+        - `> npm install`
+        - `> npx vite build`
     - The install scripts will take some time to complete, so be patient.  There is a "post install" scripted defined in the package.json that will install the Micorosoft Authentication Library (MSAL). The Platforms referenced in the package.json will also ge installed:
         - Browser  (for dev simulation & testing)
         - iOS
@@ -34,6 +36,8 @@ The SAPUI5 libraries used by the deployed application are not stored in this rep
                     + ui/*
 
 2.	Software dependencies
+    - [Android Studio](https://developer.android.com/studio)
+    - [Xcode](https://developer.apple.com/xcode/)
     - [Node.js & npm](https://nodejs.org/en/about) 
     - [Ionic Capacitor](https://capacitorjs.com/)
     - [SAPUI5](https://sapui5.hana.ondemand.com)

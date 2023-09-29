@@ -11,6 +11,9 @@ This Guide is for building Google Play Store (Android) applications.  Specifical
     - `> npm install @capacitor/android`
     - `> npx cap add android`
 
+- Build the app using the build script (it will build all platforms):
+    - `> npx vite build`
+
 - To run the app on a device or simulator, run:
     - `> npx cap run android`   (you will be prompted to select the target [sim/device])
 

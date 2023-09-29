@@ -11,18 +11,18 @@
     "postinstall": "cp node_modules/@azure/msal-browser/lib/msal-browser.min.js src/js",
     "sync": "npx cap sync",
     "start": "vite",
-    "build": "npx cap sync && vite build",
+    "build": "npx cap sync && npx vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@capacitor/ios": "^5.4.1",
     "@capacitor/android": "^5.4.1",
-    "@capacitor/core": "latest",
-    "@capacitor/splash-screen": "latest",
-    "@capacitor/device": "^5.0.6",
+    "@capacitor/browser": "^5.1.0",
     "@capacitor/camera": "^5.0.7",
+    "@capacitor/core": "latest",
+    "@capacitor/device": "^5.0.6",
     "@capacitor/geolocation": "^5.0.6",
-    "@capacitor/browser": "^5.1.0"
+    "@capacitor/ios": "^5.4.1",
+    "@capacitor/splash-screen": "latest"
   },
   "devDependencies": {
     "@azure/msal-browser": "^2.26.0",
