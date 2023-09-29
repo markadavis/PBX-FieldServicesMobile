@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>OutputSettings</name>
+    <derived/>
+    <documentation>Aggregation element for the output settings of the Viewport</documentation>
+    <since>1.92.0</since>
+    <developmentState state="experimental"></developmentState>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property name="width" type="sap.ui.core/float">
+            <documentation>width of the output, unit in mm</documentation>
+        </property>
+        <property name="height" type="sap.ui.core/float">
+            <documentation>height of the output, unit in mm</documentation>
+        </property>
+        <property name="dpi" type="sap.ui.core/int">
+            <documentation>density of the output, unit in dpi (dots-per-inch)</documentation>
+        </property>
+    </properties>
+</control>

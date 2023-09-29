@@ -1,0 +1,63 @@
+<mvc:View controllerName="com.publix.eula.controller.Launchpad"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:layout="sap.ui.layout"
+	xmlns="sap.m" >
+
+    <Page id="idLaunchpadPage"
+        busy="{busy}"
+        busyIndicatorDelay="{busyIndicatorDelay}"
+        showHeader="true"
+        titleAlignment="Center"
+        title="{i18n>title}" >
+        <content>
+            <layout:VerticalLayout
+                width="100%" >
+                <layout:content>
+
+                    <FlexBox
+                        width="100%"
+                        height="auto"
+                        alignItems="Center"
+                        justifyContent="Center"
+                        items="{/apps}" >
+                        <items>
+                            <TileContent id="{tileId}"
+                                class="{tileStyleClass}"
+                                footer="{tileFooterText}"
+                                unit="{tileUnitOfMeasure}" >
+                                <NumericContent
+                                    icon="{numberidIcon}"
+                                    scale="{numericScale}"
+                                    value="{numbericValue}"
+                                    valueColor="{numericValueColor}"
+                                    indicator="{numericIndicator}" />
+                                <FeedContent
+                                    contentText="@@notify Great outcome of the Presentation today. The new functionality and the new design was well received."
+                                    subheader="about 1 minute ago in Computer Market"
+                                    value="132" />
+                                <NewsContent
+                                    contentText="SAP Unveils Powerful New Player Comparison Tool Exclusively on NFL.com"
+				                    subheader="SAP News" />
+                            </TileContent>
+                        </items>
+                    </FlexBox>
+
+                </layout:content>
+            </layout:VerticalLayout>
+        </content>
+
+        <footer>
+            <Bar visible="{/footerVisible}" >
+                <contentLeft>
+                </contentLeft>
+                <contentMiddle>
+                </contentMiddle>
+                <contentRight>
+                </contentRight>
+            </Bar>
+        </footer>
+
+    </Page>
+
+</mvc:View>

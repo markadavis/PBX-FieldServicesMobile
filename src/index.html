@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Awesome Capacitor App</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js" >
+    </script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js" >
+    </script>
+    <script id="sap-ui-bootstrap"
+      src="./js/resources/sap-ui-core.js"
+      data-sap-ui-theme="sap_fiori_3"
+      data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+      data-sap-ui-compatVersion="edge"
+      data-sap-ui-async="true"
+      data-sap-ui-preload="async"
+      data-sap-ui-libs="sap.m"
+      data-sap-ui-resourceroots='{
+          "com.publix.eula": "app/publixEula"
+      }' >
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./app/publixEula/css/style.css" >
+
+    <style>
+      html, body, body > div, #container, #container-uiarea {
+          height: 100%;
+      }
+    </style>
+
+    <title>Publix ERP Mobile</title>
+
+  </head>
+
+  <body id="content" class="sapUiBody sapUiSizeCompact" >
+    <div data-name="com.publix.eula"
+        data-sap-ui-component
+        data-id="container"
+        data-handle-validation="true"
+        data-settings='{
+            "id" : "com.publix.eula"
+        }' >
+    </div>
+
+    <script src="./js/capacitorPlugins.js" type="module"></script>
+    <script src="./js/msal-browser.min.js"></script>
+    <script src="./app/publixAppConfig.js"></script>
+  </body>
+
+  </html>

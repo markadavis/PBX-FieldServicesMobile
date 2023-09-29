@@ -1,0 +1,11 @@
+{
+  "appId": "com.publix.erpmobile",
+  "appName": "Publix ERP Mobile",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

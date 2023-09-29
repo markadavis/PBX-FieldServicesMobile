@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>date/CalendarWeekNumbering</name>
+    <derived/>
+    <documentation>The &lt;code&gt;CalendarWeekNumbering&lt;/code&gt; enum defines how to calculate calendar weeks. Each
+value defines:
+&lt;ul&gt;
+&lt;li&gt;The first day of the week,&lt;/li&gt;
+&lt;li&gt;the first week of the year.&lt;/li&gt;
+&lt;/ul&gt;
+
+Note: This API has been introduced with version 1.108 and downported to this release with
+patch level 31.</documentation>
+    <since>1.84.31</since>
+    <enumeration>
+        <value name="Default">
+            <documentation>The default calendar week numbering:
+
+The framework determines the week numbering scheme; currently it is derived from the
+active format locale. Future versions of UI5 might select a different week numbering
+scheme.</documentation>
+        </value>
+        <value name="ISO_8601">
+            <documentation>Official calendar week numbering in most of Europe (ISO 8601 standard):
+&lt;ul&gt;
+&lt;li&gt;Monday is first day of the week,
+&lt;li&gt;the week containing January 4th is first week of the year.
+&lt;/ul&gt;</documentation>
+        </value>
+        <value name="MiddleEastern">
+            <documentation>Official calendar week numbering in much of the Middle East (Middle Eastern calendar):
+&lt;ul&gt;
+&lt;li&gt;Saturday is first day of the week,
+&lt;li&gt;the week containing January 1st is first week of the year.
+&lt;/ul&gt;</documentation>
+        </value>
+        <value name="WesternTraditional">
+            <documentation>Official calendar week numbering in the United States, Canada, Brazil, Israel, Japan, and
+other countries (Western traditional calendar):
+&lt;ul&gt;
+&lt;li&gt;Sunday is first day of the week,
+&lt;li&gt;the week containing January 1st is first week of the year.
+&lt;/ul&gt;</documentation>
+        </value>
+    </enumeration>
+</simple-type>
